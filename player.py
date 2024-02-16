@@ -20,6 +20,10 @@ class Player:
         """ Returns the current health of the player"""
         return self.health
 
+    def heal(self,healing_points):
+        """ gain health by specified healing points"""
+        self.health += healing_points
+
     def fire(self):
         """ Decreases the player's ammo by 1 and returns a message
             indicating a short fired """

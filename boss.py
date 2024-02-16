@@ -12,7 +12,7 @@ class Boss(Player):
         """ Display a message indicating the boss is using its special power"""
         print('Boss is using its special power')
 
-    def heal(self,healing_points):
+    def heal(self,healing_points=10):
         """ Increases the boss health by specified healing points """
         self.health += healing_points
 
