@@ -1,12 +1,12 @@
 from weapon import Weapon
 
 class Player:
-    def __init__(self,weapon,name,health=int(100),ammo=int(50)):
+    def __init__(self,name,health=int(100),ammo=int(50)):
         self.name = name
         self.health = health
         self.ammo = ammo
-        # self.weapon = Weapon('KK',10,15)
-        self.weapon = weapon
+        self.weapon = Weapon('KK',10,15)
+        # self.weapon = weapon
 
     def reload(self,ammo_count):
         """ Reloads the player's ammo with the given amount """
@@ -26,8 +26,8 @@ class Player:
         self.ammo -= 1
         return "Short fired "
 
-# if __name__ == "__main__":
-#     player1 = Player('Riaz', 90, 45)
-#     print(player1.get_health())
-#     print(player1.fire())
-#     print(player1.ammo)
+if __name__ == "__main__":
+    player1 = Player('Riaz', 90, 45)
+    print(player1.get_health())
+    print(player1.fire())
+    print(player1.ammo)

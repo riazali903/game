@@ -2,10 +2,11 @@ from player import Player
 from weapon import Weapon
 
 class Enemy(Player):
-    def __init__(self,name,weapon,health=int(100),ammo=int(50),agility='High'):
+    def __init__(self,name,health=int(100),ammo=int(50),agility='High'):
         super().__init__(name,health=int(100),ammo=int(50))
         self.agility = agility
-        self.weapon = weapon
+        self.weapon = Weapon('KK', 30, 20)
+        # self.weapon = weapon
 
     def evade(self):
         """ Returns a message indicating the enemy is evading the attack """

@@ -7,5 +7,6 @@ boss1 = Boss('Ali')
 enemy1 = Enemy('John',80,40)
 weapon1 = Weapon('KK',10,15)
 #have not created a player instance yet
+weapon1.attack()
 
 
