@@ -35,3 +35,4 @@ if __name__ == "__main__":
     print(player1.get_health())
     print(player1.fire())
     print(player1.ammo)
+    print(player1.weapon)
