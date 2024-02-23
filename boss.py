@@ -14,4 +14,3 @@ class Boss(Player):
     def heal(self,healing_points=10):
         """ Increases the boss health by specified healing points """
         self.health += healing_points
-
