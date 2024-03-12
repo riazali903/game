@@ -12,10 +12,18 @@ class Enemy(Player):
         """ Returns a message indicating the enemy is evading the attack """
         return "The enemy is envading the attack"
 
+    def heal(self, healing_points):
+        """ Enemy cannot heal"""
+        return self.health
     def get_health(self):
         """ override player's get_health method """
         return self.health
 
-# if __name__ == "__main__":
-#     ene = Enemy('Nayab',100,50)
-#     print(ene.get_health())
+if __name__ == "__main__":
+    ene = Enemy('Nayab',100,50)
+    print(ene.get_health())
+    print(ene.weapon)
+    ene.hit(30)
+    ene.heal(20)
+
+    print(ene.get_health())
